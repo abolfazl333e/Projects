@@ -1,0 +1,23 @@
+2025-10-07 16:25:43 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 16:25:43 OK: student_id=1, rfid=E3142E30
+2025-10-07 16:27:12 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 16:27:12 OK: student_id=2, rfid=7138DE27
+2025-10-07 16:28:13 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 16:28:13 OK: student_id=3, rfid=24B6E1B
+2025-10-07 16:29:25 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 16:29:25 OK: student_id=3, rfid=24B6E1B
+2025-10-07 16:31:33 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 16:31:33 OK: student_id=3, rfid=24B6E1B
+2025-10-07 16:33:28 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 16:33:28 OK: student_id=3, rfid=24B6E1B
+2025-10-07 20:07:43 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 20:08:57 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 20:08:57 EXCEPTION: Incorrect date value: '۱۴۰۴-۰۷-۱۵' for column `kingabo3_school`.`attendance`.`date` at row 1
+2025-10-07 20:09:12 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 20:09:12 EXCEPTION: Incorrect date value: '۱۴۰۴-۰۷-۱۵' for column `kingabo3_school`.`attendance`.`date` at row 1
+2025-10-07 20:10:31 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 20:10:31 OK: student_id=3, rfid=24B6E1B
+2025-10-07 20:11:23 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 20:11:23 OK: student_id=3, rfid=24B6E1B
+2025-10-07 20:12:02 RAW_POST: {"tagID":"E3142E30","classNum":"5"}
+2025-10-07 20:12:02 OK: student_id=2, rfid=7138DE27
