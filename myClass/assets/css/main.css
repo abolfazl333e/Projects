@@ -1,0 +1,2037 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,span {
+    /*font-family: "B Nazanin" , sans-serif;*/
+}
+
+/******************************role-page**********************/
+
+.myClass{
+    position: relative !important;
+    max-width: 100%;
+    font-family: "B Nazanin" !important;
+    background: linear-gradient(to bottom, #a8edea, #fed6e3) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.myClass_header {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px; /* فاصله از چپ و راست */
+    box-sizing: border-box;
+}
+
+.myClass-header-btn {
+    margin: 5px auto !important;
+    font-family: "B Nazanin", serif;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.myClass-header-btn:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* 📱 حالت موبایل */
+@media (max-width: 768px) {
+    .myClass_header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .myClass-header-btn {
+        width: 90%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .myClass-role-container {
+        margin-top: 80px;
+    }
+    
+    .role-card {
+        margin-top: 50px;
+    }
+}
+
+.myClass h1 {
+    font-family: "B Nazanin", serif !important;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.myClass-role-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.role-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.role-card i {
+    font-size: 60px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.role-card span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/******************************students-stars-page**********************/
+
+.students_stars {
+    font-family: "B Nazanin", sans-serif;
+    padding: 20px;
+    background: #f4f6f9;
+    overflow-x: auto; /* ✅ اسکرول افقی برای موبایل */
+}
+
+.students_stars_table {
+    width: 100%;
+    min-width: 600px; /* ✅ از جمع شدن بیش از حد جلوگیری می‌کند */
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.students_stars_table th,
+.students_stars_table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: unset !important;
+    white-space: nowrap; /* ✅ جلوگیری از شکستن متن در ستون‌ها */
+}
+
+.students_stars_table th {
+    background: #007bff;
+    color: #fff;
+}
+
+.students_stars_table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.stars {
+    color: gold;
+}
+
+.students_stars h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 📱 برای صفحه‌های کوچک‌تر */
+@media (max-width: 768px) {
+    .students_stars_table {
+        font-size: 14px;
+        min-width: 500px; /* جدول هنوز قابل اسکرول است */
+    }
+
+    .students_stars {
+        padding: 10px;
+    }
+
+    .students_stars h1 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100vw; /* ✅ عرض برابر عرض کل صفحه، نه فقط جدول */
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); /* ✅ وسط دقیق صفحه */
+    }
+}
+
+/* 📱 برای موبایل خیلی کوچک */
+@media (max-width: 480px) {
+    .students_stars_table {
+        font-size: 13px;
+        min-width: 450px;
+    }
+}
+
+/******************************attendance-page**********************/
+
+/* بدنه و بکگراند */
+.attendance {
+    font-family: "B Nazanin", sans-serif !important;
+    font-weight: bold !important;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #87ceeb, #b0e0e6);
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* کارت اصلی */
+.card {
+    max-width: 800px;
+    width: 90%;
+    margin: 80px auto 20px auto;
+    background: rgba(255,255,255,0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.card h1 {
+    font-family: "B Nazanin", sans-serif !important;
+    font-weight: bold !important;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* ابرها */
+.cloud {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: cloudMove 15s ease-in-out infinite;
+    z-index: 0;
+}
+
+.cloud1 { width: 120px; height: 60px; top: 50px; left: 20%; }
+.cloud2 { width: 180px; height: 80px; top: 120px; left: 60%; }
+
+@keyframes cloudMove {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(25px); }
+    100% { transform: translateX(0); }
+}
+
+/* دانش‌آموزان */
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px dashed #ddd;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+.present { background: #dff0d8; }
+.absent { background: #f8d7da; }
+
+/* کنترل‌ها */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: "B Nazanin", sans-serif !important;
+    font-weight: bold;
+    background: #27ae60;
+    color: white;
+    transition: transform 0.2s ease, background 0.3s;
+}
+.btn:hover {
+    transform: scale(1.05);
+    background: #219150;
+}
+
+.btn-primary { background: #27ae60; color: white; }
+.btn-danger { background: #e74c3c; color: white; }
+
+#lastUpdated {
+    flex-basis: 100%;
+    text-align: center;
+    color: #555;
+    margin-top: 5px;
+}
+
+#reportBtn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* لینک بازگشت */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* 🎯 ریسپانسیو مخصوص موبایل */
+@media (max-width: 768px) {
+    .card {
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    .card h1 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #lastUpdated {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #studentsList {
+        font-size: 15px;
+    }
+
+    .cloud1 { width: 90px; height: 45px; top: 30px; left: 15%; }
+    .cloud2 { width: 130px; height: 60px; top: 90px; left: 65%; }
+}
+
+
+/******************************experiments-page**********************/
+
+
+.experiments_container {
+    font-family: "B Nazanin" !important;
+    font-weight: bold;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+    object-fit: cover;
+    width: unset;
+}
+
+.experiments_container h2 {
+    font-family: "B Nazanin" !important;
+    font-weight: bold;
+    text-align: center;
+    color: #264653;
+    font-size: 32px;
+    margin-bottom: 30px;
+    position: relative;
+}
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #2a9d8f;
+    border-radius: 3px;
+}
+
+.filter-box {
+    text-align: center;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: inline-block;
+    width: auto;
+}
+
+select {
+    font-family: 'Vazirmatn', sans-serif;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background: #fff;
+    transition: 0.3s;
+}
+select:focus {
+    outline: none;
+    border-color: #2a9d8f;
+    box-shadow: 0 0 0 3px rgba(42,157,143,0.2);
+}
+
+.experiments_card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.experiments_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.experiments_card h3 {
+    margin: 0 0 8px;
+    color: #264653;
+    font-size: 22px;
+}
+.experiments_card p {
+    margin: 6px 0;
+    color: #555;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+.images img {
+    height: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    scroll-snap-align: start;
+}
+.images img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+.modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    width: auto;
+}
+.caption {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 12px;
+    text-align: justify;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.close:hover { color: #f1f1f1; }
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 10px 20px;
+    user-select: none;
+}
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+.no-exp {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* جهت راست‌به‌چپ */
+html[dir="rtl"] .modal-nav.left {
+    right: 20px;
+    left: auto;
+    transform: rotate(180deg);
+}
+html[dir="rtl"] .modal-nav.right {
+    left: 20px;
+    right: auto;
+    transform: rotate(180deg);
+}
+html[dir="rtl"] .modal-nav.left::before {
+    content: "▶";
+}
+html[dir="rtl"] .modal-nav.right::before {
+    content: "◀";
+}
+
+.experiment-img {
+    max-height: 120px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#modalImage {
+    width: auto !important;
+}
+
+/* =============================== */
+/* 📱 حالت ریسپانسیو برای تبلت و موبایل */
+/* =============================== */
+@media (max-width: 992px) {
+    .experiments_container {
+        padding: 20px 10px 40px;
+    }
+
+    .experiments_container h2 {
+        font-size: 26px;
+    }
+
+    .filter-box {
+        width: 100%;
+        display: block;
+    }
+
+    select {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .experiments_card {
+        padding: 15px;
+    }
+
+    .experiments_card h3 {
+        font-size: 20px;
+    }
+
+    .images img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .experiments_container h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .filter-box label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    select {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .experiments_card {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+
+    .experiments_card h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .experiments_card p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .images {
+        gap: 6px;
+    }
+
+    .images img {
+        height: 90px;
+        border-radius: 8px;
+    }
+
+    .no-exp {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+/******************************manage-experiments-page**********************/
+
+#experimentForm {
+    font-family: "B Nazanin" , sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+/* ==== مدال ==== */
+#experimentModal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: "B Nazanin" , sans-serif;
+    font-weight: bold;
+    overflow-y: auto;
+}
+
+#experimentModal > div {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    width: 90%;
+    max-width: 520px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* عنوان مدال */
+#experimentModal h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #264653;
+    text-align: center;
+}
+
+/* input, select, textarea, file */
+#experimentModal input[type="text"],
+#experimentModal select,
+#experimentModal textarea,
+#experimentModal input[type="file"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    box-sizing: border-box;
+}
+
+#experimentModal input:focus,
+#experimentModal select:focus,
+#experimentModal textarea:focus {
+    outline: none;
+    border-color: #2a9d8f;
+    box-shadow: 0 0 6px rgba(42,157,143,0.4);
+}
+
+/* textarea */
+#experimentModal textarea { resize: vertical; min-height: 100px; }
+
+/* تصاویر داخل مدال */
+#modalCurrentImages {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+#modalCurrentImages div {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+#modalCurrentImages img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: grab;
+    border: 1px solid #ccc;
+    transition: transform 0.2s;
+}
+
+#modalCurrentImages img:hover {
+    transform: scale(1.05);
+}
+
+#modalCurrentImages button {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+#modalCurrentImages button:hover {
+    background: #c62828;
+}
+
+/* دکمه‌ها */
+#experimentModal .modal-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#experimentModal .modal-actions button {
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: all 0.2s ease;
+}
+
+#experimentModal .modal-actions .button-primary {
+    background: #2a9d8f;
+    color: #fff;
+}
+
+#experimentModal .modal-actions .button-primary:hover {
+    background: #21867a;
+}
+
+#experimentModal .modal-actions .button {
+    background: #ccc;
+    color: #333;
+}
+
+#experimentModal .modal-actions .button:hover {
+    background: #b3b3b3;
+}
+
+h1{
+    text-align:center;
+    color:#333;
+    margin-bottom:30px;
+}
+
+
+/******************************top-students-page**********************/
+
+
+.top-students-page {
+    font-family: "B Nazanin" !important;
+}
+
+.accordion{
+    font-family: "B Nazanin" !important;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.accordion-item{
+    font-family: "B Nazanin" !important;
+    background:#fff;
+    border-radius:12px;
+    margin-bottom:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.accordion-header{
+    font-family: "B Nazanin" !important;
+    background:linear-gradient(90deg,#ff9800,#f57c00);
+    color:#fff;
+    padding:15px 20px;
+    font-size:1.2rem;
+    cursor:pointer;
+    display:flex !important;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.accordion-content{
+    font-family: "B Nazanin" !important;
+    max-height:0;
+    overflow:hidden;
+    background:#fff;
+    transition:max-height 0.3s ease;
+    padding:0 20px  !important;
+    display:flex !important;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.accordion-content.active{
+    padding:20px;
+}
+
+.icon{
+    transition:transform 0.3s ease;
+}
+
+.icon.rotate{
+    transform:rotate(90deg);
+}
+
+.top_students_card {
+    font-family: "B Nazanin" !important;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    width:220px;
+    padding:20px;
+    text-align:center;
+    position:relative;
+    transition:0.3s;
+}
+
+.top_students_card:hover {
+    transform:translateY(-10px);
+}
+
+.top_students_card img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:3px solid gold;
+    margin-bottom:10px;
+}
+
+.top_students_card h3 {
+    font-family: "B Nazanin" !important;
+}
+
+.stars{
+    color:gold;
+    font-size:18px;
+    margin-top:5px;
+    display:flex;
+    justify-content:center;
+    gap:3px;
+}
+
+.star{
+    opacity:0;
+    transform:scale(0);
+    animation:pop 0.5s forwards;
+}
+
+@keyframes pop{
+    0%{opacity:0;transform:scale(0);}
+    50%{opacity:1;transform:scale(1.3);}
+    100%{opacity:1;transform:scale(1);}
+}
+
+.medal{
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    background:gold;
+    color:white;
+    padding:8px;
+    border-radius:50%;
+    font-size:16px;
+}
+
+.save-top-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "B Nazanin" !important;
+    transition: 0.3s;
+}
+
+.save-top-btn:hover {
+    background: #388e3c;
+}
+
+
+/******************************dashboard-page**********************/
+
+/* === کارت اصلی داشبورد === */
+.dashboard {
+    font-family: "B Nazanin"  !important;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    animation: pop 0.6s ease;
+    margin: 20px auto !important;
+}
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* خروج */
+.logout {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.logout a {
+    text-decoration: none;
+    color: #ff5c5c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* عنوان و اطلاعات دانش‌آموز */
+.dashboard h2 {
+    font-family: "B Nazanin" !important;
+    color: #007bff;
+    font-size: 26px;
+    margin-top: 10px;
+}
+.info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* انتخاب درس */
+.dashboard select {
+    margin: 0 auto !important;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    font-size: 16px;
+    width: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center !important;
+}
+.dashboard select:hover {
+    background-color: #e7f1ff;
+}
+
+/* وضعیت حضور */
+.status {
+    background: #e9f7ef;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* کارت رفتار */
+.dashboard_card {
+    background: #fef3c7;
+    border: 2px dashed #f59e0b;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.positive {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 20px;
+}
+.negative {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ایموجی متحرک */
+.emoji {
+    font-size: 35px;
+    margin-bottom: 10px;
+    animation: float 2s infinite ease-in-out;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* === واکنش‌گرا برای موبایل === */
+@media (max-width: 768px) {
+    .dashboard {
+        width: 90%; /* کارت عرض کامل موبایل */
+        padding: 20px;
+    }
+    .dashboard h2 {
+        font-size: 22px;
+    }
+    .info {
+        font-size: 16px;
+    }
+    .dashboard select {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+    .status {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .dashboard_card {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .positive, .negative {
+        font-size: 18px;
+    }
+    .emoji {
+        font-size: 30px;
+    }
+    .logout a {
+        font-size: 14px;
+    }
+}
+
+
+/******************************students-card-page**********************/
+
+.students_card {
+    font-family: "B Nazanin" !important;
+    font-weight: bold !important;
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 1100px;
+    transition: all 0.3s ease;
+}
+
+.students_card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* === عنوان کارت === */
+.students_card h2 {
+    font-family: "B Nazanin" !important;
+    font-weight: bold !important;
+    color: #2b2d42;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.students_card .info {
+    text-align: center;
+    color: #6c757d;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+
+/******************************students-login-modal-page**********************/
+
+.students_login_modal {
+    display: none; /* نمایش فقط با JS */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.students_login_modal .login-box {
+    position: relative;
+    background: #f8e1a1; /* رنگ روشن و جذاب */
+    padding: 30px 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.students_login_modal h2 {
+    font-family: "B Nazanin", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+}
+
+.students_login_modal .error {
+    display: none;
+    margin-bottom: 10px;
+    color: red;
+    text-align: center;
+    font-size: 14px;
+}
+
+#studentLoginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+#studentLoginForm input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#studentLoginForm input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+#students_login_modal_btn {
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    border: none;
+    color: #333;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#students_login_modal_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* واکنش‌گرایی موبایل */
+@media (max-width: 480px) {
+    .students_login_modal .login-box {
+        padding: 20px 15px;
+        max-width: 95%;
+    }
+
+    #studentLoginForm input, #students_login_modal_btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .students_login_modal h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+/******************************students-import-page**********************/
+
+/* === ناحیه آپلود === */
+.upload-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    background: #f8f9fa;
+    border: 2px dashed #ced4da;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.25s ease;
+}
+.upload-area:hover {
+    border-color: #007bff;
+    background: #f1f8ff;
+}
+
+/* === فیلد ورودی فایل === */
+.upload-area input[type="file"] {
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+}
+
+/* === دکمه‌ها === */
+.btn {
+    background: linear-gradient(135deg, #007bff, #00b4d8);
+    border: none;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+.btn:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    transform: translateY(-2px);
+}
+
+/* === پیام‌ها === */
+.message {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+}
+
+/* === کارت‌های اصلی === */
+.students_card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+/* === جدول دانش‌آموزان === */
+.table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+#studentsTable {
+    width: 100%;
+    min-width: 800px; /* ✅ حفظ ساختار در دسکتاپ */
+    border-collapse: collapse;
+    background: #fff;
+}
+
+#studentsTable th {
+    background: linear-gradient(135deg, #007bff, #00b4d8);
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    text-align: center;
+    border: none;
+}
+
+#studentsTable td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+#studentsTable tr:hover td {
+    background: #f5faff;
+}
+
+/* === ورودی‌ها داخل جدول === */
+#studentsTable input {
+    width: 90%;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fafafa;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+#studentsTable input:focus {
+    background: #fff;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* === دکمه ثبت تغییرات === */
+#studentsTable .updateBtn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+#studentsTable .updateBtn:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* === دکمه نمایش رمز === */
+.showPwd {
+    display: inline-block;
+    margin-right: 6px;
+    color: #007bff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.showPwd:hover {
+    color: #0056b3;
+}
+
+/* === دکمه‌های خروجی === */
+.export-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.btn-export {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-export.csv {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+}
+.btn-export.sql {
+    background: linear-gradient(135deg, #2196f3, #64b5f6);
+}
+.btn-export:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+/* === واکنش‌گرا === */
+@media (max-width: 768px) {
+    .wrap h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .students_card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .upload-area {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .upload-area label,
+    .upload-area input,
+    .upload-area .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .table-wrap {
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+
+    #studentsTable {
+        font-size: 13px;
+        min-width: 600px;
+    }
+
+    #studentsTable th,
+    #studentsTable td {
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .export-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-export {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    td , th {
+        min-width: 130px;
+    }
+}
+
+/* === واکنش‌گرایی برای موبایل خیلی کوچک (زیر 480px) === */
+@media (max-width: 480px) {
+    .wrap h1 {
+        font-size: 18px;
+    }
+
+    .upload-title h2 {
+        font-size: 16px;
+    }
+
+    .upload-area {
+        gap: 8px;
+    }
+
+    #studentsTable {
+        min-width: 500px;
+    }
+}
+
+
+/******************************students-import-page**********************/
+
+#behaviorTable th , #behaviorTable td {
+    border: 1px solid #ece7e7 !important;
+}
+
+/******************************students-gallery-page**********************/
+
+.student-gallery-wrapper {
+    font-family: "Vazirmatn", sans-serif;
+    background: linear-gradient(135deg, #fff4e6, #ffe6f7);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.student-gallery-wrapper h1 {
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px #fff;
+    margin-bottom: 15px;
+    font-size: clamp(20px, 5vw, 32px);
+}
+.mySwiper {
+    width: 100%;
+    max-width: 800px;
+    height: 400px; /* ارتفاع ثابت */
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    display: flex;       /* برای مرکز کردن تصویر */
+    align-items: center; /* مرکز عمودی تصویر */
+    justify-content: center; /* مرکز افقی تصویر */
+}
+
+/* تصاویر داخل اسلاید */
+.mySwiper .swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* تصویر کامل نمایش داده شود */
+    display: block;
+}
+
+
+/******************************manage-group-page**********************/
+
+.manage-group-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    font-family: 'B Nazanin', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(135deg,#e0eafc,#cfdef3);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.manage-group-container * {
+    box-sizing: border-box;
+}
+
+.manage-group-container h2, 
+.manage-group-container h3, 
+.manage-group-container h4 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.manage-group-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.manage-group-card:hover {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.manage-group-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.manage-group-container form input,
+.manage-group-container form select,
+.manage-group-container form button,
+.manage-group-container form input[type=file] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: auto;
+    max-width: 100%;
+}
+
+.manage-group-container form button {
+    background: linear-gradient(45deg,#007bff,#00c6ff);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manage-group-container form button:hover {
+    opacity: 0.85;
+}
+
+.manage-group-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    /*display: block;*/
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.manage-group-container table th {
+    background: linear-gradient(45deg,#007bff,#00c6ff);
+    color: #fff;
+    padding: 10px;
+}
+
+.manage-group-container table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+.manage-group-container table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.manage-group-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.manage-group-container a:hover {
+    color: #0056b3;
+}
+
+.manage-group-container img.group-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.manage-group-container ul {
+    margin: 0;
+    padding-left: 15px;
+    text-align: right;
+    direction: rtl;
+}
+
+.manage-group-container .select-multi {
+    min-width: 200px;
+    max-width: 100%;
+}
+
+.manage-group-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4f;
+}
+
+.manage-group-close-btn:hover {
+    color: #d60000;
+}
+
+
+@media screen and (min-width: 992px) {
+  .table-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+
+/* 📱 واکنش‌گرایی موبایل */
+@media (max-width: 768px) {
+    .manage-group-container {
+        padding: 10px;
+    }
+
+    .manage-group-container form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .manage-group-container form input,
+    .manage-group-container form select,
+    .manage-group-container form button {
+        width: 100%;
+    }
+
+    .manage-group-container table {
+        font-size: 12px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .manage-group-container img.group-img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+/******************************view-exams-page**********************/
+
+/* فقط CSS مرتبط با کارت‌ها */
+.group-grid { 
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:20px; 
+    
+}
+
+.view-group-card {
+    background:#fff; 
+    border-radius:20px; 
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    padding:20px; 
+    transition:0.3s; 
+    text-align:center; 
+    
+}
+
+.view-group-card:hover {
+    transform: translateY(-5px);
+    box-shadow:0 15px 25px rgba(0,0,0,0.25); 
+    
+}
+
+.group-img {
+    width:100%; 
+    height:150px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.view-group-card h3 {
+    margin:0 0 10px 0; 
+    font-size:22px; 
+    color:#ff6f61;
+    text-align:center;
+}
+
+.view-group-card p {
+    margin:5px 0;
+    font-size:16px; 
+    text-align:center; 
+    color:#333;
+}
+
+.view-group-members {
+    background:#f9f9f9;
+    border-radius:12px;
+    padding:10px; 
+    margin-top:10px;
+    text-align:right;
+}
+
+.view-group-members ul {
+    list-style: disc inside; 
+    padding-left:0;
+    margin:0;
+    direction:rtl; 
+    text-align:right;
+}
+
+.view-group-members li {
+    font-size:14px; 
+    padding:2px 0;
+}
+
+@media(max-width:1024px){
+    .card h3 {
+        font-size:20px;
+    } 
+        
+    .card p { 
+        font-size:15px;
+    }
+    
+    .members li { 
+        font-size:13px;
+    }
+    
+    .group-img { 
+        height:180px; 
+        
+    } 
+    
+}
+
+@media(max-width:768px){
+    .group-grid { 
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    } 
+    .card {
+        padding:15px;   
+    }   
+    .card h3 {
+        font-size:18px;
+    } 
+    .card p{
+        font-size:14px;
+    } 
+    .members li {
+        font-size:12px; 
+    }   
+    .group-img {    
+        height:180px; 
+    }
+}
+
+@media(max-width:480px){ .group-grid { grid-template-columns: 1fr; } .card { padding:12px; } .card h3 { font-size:16px; } .card p { font-size:13px; } .members li { font-size:12px; } .group-img { height:180px; } }
+
+
+/******************************view-exams-page**********************/
+
+/* همه استایل‌ها scoped به کلاس view-exam-container */
+.view-exam-container {
+    font-family: B Nazanin, sans-serif;
+    font-weight: bold;
+    background: #f0f4f8;
+    direction: rtl;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.view-exam-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+/* فیلترها */
+.view-exam-container .view-exam-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.view-exam-container .view-exam-filters select,
+.view-exam-container .view-exam-filters input,
+.view-exam-container .view-exam-filters button {
+    padding: 8px 12px;
+    margin: 0 5px 10px 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.view-exam-container .view-exam-filters button {
+    background: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.view-exam-container .view-exam-filters button:hover {
+    background: #3498db;
+}
+
+/* آکاردئون */
+.view-exam-container .view-exam-accordion {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.view-exam-container .view-exam-accordion-header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-exam-container .view-exam-accordion-header:hover {
+    background-color: #2980b9;
+}
+.view-exam-container .view-exam-accordion-body {
+    display: none;
+    background: #fff;
+    padding: 15px;
+}
+
+/* عکس امتحان */
+.view-exam-container .view-exam-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+/* کارت دانش‌آموزان */
+.view-exam-container .view-exam-students {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.view-exam-container .view-exam-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.view-exam-container .view-exam-card:hover {
+    transform: translateY(-3px);
+}
+.view-exam-container .view-exam-card img {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+.view-exam-container .view-exam-name {
+    font-weight: bold;
+    margin: 6px 0 4px 0;
+}
+.view-exam-container .view-exam-score {
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* Modal */
+.view-exam-container #view-exam-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+.view-exam-container #view-exam-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+    cursor: pointer;
+}
+
+#view-exam-modal {
+    display: none;           /* ابتدا مخفی */
+    position: fixed;         /* روی کل صفحه */
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8); /* پس‌زمینه تار */
+    justify-content: center; /* مرکز افقی */
+    align-items: center;     /* مرکز عمودی */
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+}
+
+#view-exam-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+    cursor: pointer;
+}
+
+/* ریسپانسیو */
+@media(max-width:600px){
+    .view-exam-container .view-exam-card {
+        width: 120px;
+    }
+    .view-exam-container .view-exam-card img {
+        width: 60px;
+        height: 60px;
+    }
+    .view-exam-container .view-exam-accordion-header {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+
+/******************************view-exams-admin-page**********************/
+
+
+.view-exams-admin-container { max-width: 1000px; margin: auto; }
+.view-exams-admin-container h2 { text-align: center; margin-bottom: 20px; }
+.view-exams-admin-examForm .myclass-filters { text-align: center; margin-bottom: 20px; }
+.view-exams-admin-examForm .myclass-filters select,
+.view-exams-admin-examForm .myclass-filters input,
+.view-exams-admin-examForm .myclass-filters button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.view-exams-admin-cards { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+.view-exams-admin-card { background: #fff; border-radius: 10px; padding: 15px; width: 180px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; transition: transform 0.2s; }
+.view-exams-admin-card:hover { transform: translateY(-5px); }
+.view-exams-admin-card img { width: 80px; height: 80px; object-fit: contain; border-radius: 50%; margin-bottom: 10px; border: 2px solid #ccc; }
+.view-exams-admin-name { font-weight: bold; margin-bottom: 5px; }
+.view-exams-admin-scores { display: flex; justify-content: space-between; cursor: pointer; margin-bottom: 5px; flex-direction: column; }
+.view-exams-admin-score-box { flex: 1; margin: 2px; padding: 8px 0; color: white; font-weight: bold; border-radius: 5px; transition: transform 0.2s; }
+.view-exams-admin-score-box.selected { transform: scale(1.1); box-shadow: 0 0 5px #000; }
+.view-exams-admin-btns { margin:0 auto !important; display:flex; width:60%; justify-content:space-around; }
+.view-exams-admin-btns button { font-family:B Nazanin !important; cursor: pointer; }
+
+@media(max-width:600px){ 
+    .view-exams-admin-card { width: 140px; } 
+    .view-exams-admin-card img { width: 60px; height: 60px; }
+}
+

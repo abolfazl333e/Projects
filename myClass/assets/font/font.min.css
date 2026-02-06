@@ -1,0 +1,105 @@
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 100;
+	src: url('./iransansx/IRANSansX-Thin.woff') format('woff'),
+	url('./iransansx/IRANSansX-Thin.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 200;
+	src: url('./iransansx/IRANSansX-UltraLight.woff') format('woff'),
+	url('./iransansx/IRANSansX-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 300;
+	src: url('./iransansx/IRANSansX-Light.woff') format('woff'),
+	url('./iransansx/IRANSansX-Light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 500;
+	src: url('./iransansx/IRANSansX-Medium.woff') format('woff'),
+	url('./iransansx/IRANSansX-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 600;
+	src: url('./iransansx/IRANSansX-DemiBold.woff') format('woff'),
+	url('./iransansx/IRANSansX-DemiBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 800;
+	src: url('./iransansx/IRANSansX-ExtraBold.woff') format('woff'),
+	url('./iransansx/IRANSansX-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 900;
+	src: url('./iransansx/IRANSansX-Black.woff') format('woff'),
+	url('./iransansx/IRANSansX-Black.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: bold;
+	src: url('./iransansx/IRANSansX-Bold.woff') format('woff'),
+	url('./iransansx/IRANSansX-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: normal;
+	src: url('./iransansx/IRANSansX-Regular.woff') format('woff'),
+	url('./iransansx/IRANSansX-Regular.woff2') format('woff2');
+}
+
+/*added*/
+
+@font-face {
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('./open_sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('./open_sans/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('./open_sans/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: OpenSans;
+	font-style: italic;
+	src: url('./open_sans/OpenSans-Italic.ttf') format('truetype');
+}
+
+html,
+body, input, input::placeholder, textarea, textarea::placeholder {
+	font-family: IRANSansX, serif !important;
+}
